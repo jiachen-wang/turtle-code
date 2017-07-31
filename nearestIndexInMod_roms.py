@@ -27,7 +27,7 @@ modLats = modData.variables['lat_rho'][:]
 s_rho = modData.variables['s_rho'][:]
 h = modData.variables['h'][:]
 indexNotNull = obsLon[obsLon.isnull()==False].index # some obslat and obslon of point are empty, get rid of them.
- print indexNotNull                                                  # or this line can be the indices of TF which is less.
+print indexNotNull                                                  # or this line can be the indices of TF which is less.
                                                     # indexTF = np.where(obsData['TF'].notnull())[0]
 
 loc = []
