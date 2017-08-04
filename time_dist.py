@@ -67,7 +67,7 @@ goodlons=pd.Series(ctd['LON'], index=indx)
 goodlats=pd.Series(ctd['LAT'], index=indx)
 goodturtle_id=pd.Series(ctd['REF'],index=indx)
 d=pd.DataFrame({'Time':goodTime,'lon':goodlons,'lat':goodlats,'turtle':goodturtle_id},index=indx)
-d=d.sort(['Time'])
+d=d.sort_index(['Time'])
 d.index=range(len(d))
 for i in d.index:
     if i+1 == len(d):
